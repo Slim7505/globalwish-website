@@ -41,6 +41,7 @@ body {
   font-family: var(--body); font-size: 1rem; line-height: 1.75;
   -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
 }
+html[lang="ja"] .display, html[lang="ja"] .h2, html[lang="ja"] .h3 { word-break: auto-phrase; }
 html[lang="ja"] body { line-height: 1.95; letter-spacing: .02em; font-feature-settings: "palt" 0; }
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--violet); text-decoration-thickness: 1px; text-underline-offset: .2em; }
