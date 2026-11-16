@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block content %}
+{% set P = t.services %}{% set head_img = "class-painting" %}
+{% include "_pagehead.html" %}
+<section class="section">
+  <div class="wrap services">
+    {% for s in P["items"] %}
+    <article class="service reveal" id="{{ s.id }}">
+      <div class="arch service-media">{{ m.img(s.img, "", "cover") }}</div>
+      <div class="service-body">
+        <p class="service-num">{{ "%02d"|format(loop.index) }}</p>
+        <h2 class="h2">{{ s.title }}</h2>
+        <p>{{ s.text }}</p>
+        <ul class="ticks">{% for p in s.points %}<li>{{ p }}</li>{% endfor %}</ul>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="wrap">
+    <header class="section-head reveal"><h2 class="h2">{{ P.process_heading }}</h2></header>
+    <ol class="steps">
+      {% for s in P.process %}
+      <li class="step reveal"><span class="step-num">{{ loop.index }}</span><h3 class="h3">{{ s.title }}</h3><p>{{ s.text }}</p></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% include "_cta.html" %}
+{% endblock %}

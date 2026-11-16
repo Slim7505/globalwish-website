@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block content %}
+{% set h = t.home %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">{{ h.eyebrow }}</p>
+      <h1 class="display">{{ h.heading }}</h1>
+      <p class="lead">{{ h.lead }}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="{{ path('products') }}">{{ t.ui.cta_products }} {{ m.icon("arrow", "ico ico-sm") }}</a>
+        <a class="btn btn-ghost" href="{{ path('contact') }}">{{ t.ui.cta_contact }}</a>
+      </div>
+    </div>
+    <div class="hero-art reveal">
+      <div class="arch arch-xl">{{ m.img("honey", h.hero_alt, "cover pos-right", "eager") }}</div>
+      <div class="hero-badge">{{ m.img("hero-altai-lake", "", "cover") }}</div>
+      {{ m.ornament("ornament hero-ornament") }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">{{ h.pillars_eyebrow }}</p>
+      <h2 class="h2">{{ h.pillars_heading }}</h2>
+    </header>
+    <ul class="pillars">
+      {% for p in h.pillars %}
+      <li class="pillar reveal">
+        <span class="pillar-ico">{{ m.icon(p.icon) }}</span>
+        <h3 class="h3">{{ p.title }}</h3>
+        <p>{{ p.text }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="center reveal"><a class="link-arrow" href="{{ path('services') }}">{{ t.ui.nav.services }} {{ m.icon("arrow", "ico ico-sm") }}</a></p>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap">
+    <header class="section-head section-head-split reveal">
+      <div>
+        <p class="eyebrow">{{ h.products_eyebrow }}</p>
+        <h2 class="h2">{{ h.products_heading }}</h2>
+      </div>
+      <p class="lead-sm">{{ h.products_lead }}</p>
+    </header>
+    <div class="cards">
+      {% for f in h.featured %}
+      <a class="card reveal" href="{{ path('products') }}#{{ f.anchor }}">
+        <div class="arch card-media">{{ m.img(f.img, "", "cover") }}</div>
+        <h3 class="h3">{{ f.title }}</h3>
+        <p>{{ f.text }}</p>
+        <span class="card-more" aria-hidden="true">{{ m.icon("arrow", "ico ico-sm") }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section story">
+  <div class="wrap story-grid">
+    <figure class="story-portrait reveal">
+      <div class="portrait-ring">{{ m.img("president", t.about.president_alt, "cover") }}</div>
+    </figure>
+    <div class="reveal">
+      <p class="eyebrow">{{ h.story_eyebrow }}</p>
+      <blockquote class="quote">
+        <p>{{ h.story_quote }}</p>
+        <footer><strong>{{ h.story_name }}</strong><span>{{ h.story_role }}</span></footer>
+      </blockquote>
+      <a class="link-arrow" href="{{ path('about') }}">{{ h.story_link }} {{ m.icon("arrow", "ico ico-sm") }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-deep">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow eyebrow-light">{{ h.record_eyebrow }}</p>
+      <h2 class="h2">{{ h.record_heading }}</h2>
+      <p class="lead-sm">{{ h.record_lead }}</p>
+    </header>
+    <dl class="stats">
+      {% for s in h.stats %}
+      <div class="stat reveal"><dt>{{ s.label }}</dt><dd>{{ s.num }}</dd></div>
+      {% endfor %}
+    </dl>
+    <ul class="venues reveal">
+      {% for v in h.venues %}<li>{{ v }}</li>{% endfor %}
+    </ul>
+    <p class="center"><a class="btn btn-light" href="{{ path('events') }}">{{ h.record_link }} {{ m.icon("arrow", "ico ico-sm") }}</a></p>
+  </div>
+</section>
+
+{% include "_cta.html" %}
+{% endblock %}

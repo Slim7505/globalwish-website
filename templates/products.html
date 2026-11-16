@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block content %}
+{% set P = t.products %}{% set head_img = "products" %}
+{% include "_pagehead.html" %}
+<nav class="jump" aria-label="{{ P.jump }}">
+  <div class="wrap jump-inner">
+    <span class="jump-label">{{ P.jump }}</span>
+    <ul>{% for c in P.categories %}<li><a href="#{{ c.id }}">{{ c.title }}</a></li>{% endfor %}</ul>
+  </div>
+</nav>
+{% for c in P.categories %}
+<section class="section product-cat{% if loop.index is even %} section-tint{% endif %}" id="{{ c.id }}">
+  <div class="wrap cat-grid{% if loop.index is even %} cat-flip{% endif %}">
+    <div class="cat-media reveal">
+      <div class="arch arch-tall">{{ m.img(c.img, c.title, "cover") }}</div>
+    </div>
+    <div class="cat-body reveal">
+      <p class="eyebrow">{{ "%02d"|format(loop.index) }} / {{ "%02d"|format(P.categories|length) }}</p>
+      <h2 class="h2">{{ c.title }}</h2>
+      {% for para in c.text %}<p>{{ para }}</p>{% endfor %}
+      <ul class="items">
+        {% for it in c["items"] %}
+        <li class="item">
+          <div class="item-head"><h3 class="h4">{{ it.name }}</h3><span class="item-spec">{{ it.spec }}</span></div>
+          <p>{{ it.text }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      {% if c.quote is defined %}
+      <blockquote class="quote quote-sm"><p>{{ c.quote }}</p><footer><span>{{ c.quote_by }}</span></footer></blockquote>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+<section class="section section-deep" id="order">
+  <div class="wrap order-grid">
+    <div class="reveal">
+      <h2 class="h2">{{ P.order_heading }}</h2>
+      <ol class="order-steps">{% for s in P.order_steps %}<li>{{ s }}</li>{% endfor %}</ol>
+      <p class="note">{{ P.price_note }}</p>
+    </div>
+    <div class="order-cta reveal">
+      <a class="btn btn-light" href="{{ path('contact') }}?topic=2">{{ m.icon("mail", "ico ico-sm") }} {{ t.ui.cta_contact }}</a>
+      <a class="btn btn-outline-light" href="{{ site.amazon_store }}" rel="noopener" target="_blank">{{ m.icon("cart", "ico ico-sm") }} {{ t.ui.amazon }}</a>
+      <p class="note">{{ P.order_amazon }}</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

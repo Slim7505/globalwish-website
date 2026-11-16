@@ -1,0 +1,134 @@
+{% import "_macros.html" as m with context %}
+{% set pm = t.meta.pages[slug] %}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ pm.title }}</title>
+<meta name="description" content="{{ pm.description }}">
+<link rel="canonical" href="{{ canonical }}">
+{% for l in langs %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ alt[l] }}">
+{% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ alt[langs[0]] }}">
+<meta name="theme-color" content="#2a1f4d">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ t.meta.site_name }}">
+<meta property="og:title" content="{{ pm.title }}">
+<meta property="og:description" content="{{ pm.description }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ base_url }}/assets/img/og-image.jpg">
+<meta property="og:locale" content="{{ site.og_locale[lang] }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{% if lang == "ja" %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
+{% else %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap">
+{% endif %}
+<link rel="stylesheet" href="/assets/css/site.css">
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": t.company.name,
+  "alternateName": ["Global Wish Co., Ltd.", "グローバルウィッシュ株式会社"],
+  "url": base_url ~ "/",
+  "logo": base_url ~ "/assets/img/apple-touch-icon.png",
+  "email": site.email,
+  "telephone": site.tel,
+  "faxNumber": site.fax,
+  "foundingDate": site.founded,
+  "founder": {"@type": "Person", "name": t.company.president},
+  "address": {"@type": "PostalAddress", "postalCode": site.postal_code, "addressCountry": "JP", "streetAddress": t.company.address},
+  "sameAs": [site.instagram]
+} | tojson }}
+</script>
+</head>
+<body class="page-{{ slug }}">
+<a class="skip" href="#main">{{ t.ui.skip }}</a>
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ path('home') }}" aria-label="{{ t.meta.site_name }} — {{ t.ui.nav.home }}">
+      <img src="/assets/img/emblem.png" width="143" height="142" alt="" class="brand-mark">
+      <span class="brand-text">
+        <span class="brand-name">Global Wish</span>
+        <span class="brand-sub">{{ "グローバルウィッシュ株式会社" if lang == "ja" else "Co., Ltd." }}</span>
+      </span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Main" data-nav>
+      <ul class="nav-list">
+        {% for s in site.nav %}
+        <li><a href="{{ path(s) }}"{% if s == slug %} aria-current="page"{% endif %}>{{ t.ui.nav[s] }}</a></li>
+        {% endfor %}
+      </ul>
+      <div class="lang" role="group" aria-label="{{ t.ui.language }}">
+        {{ m.icon("globe", "ico ico-sm") }}
+        {% for l in langs %}
+        <a href="{{ alt[l]|replace(base_url, '') }}" hreflang="{{ l }}" lang="{{ l }}"{% if l == lang %} aria-current="true"{% endif %} title="{{ site.lang_label[l] }}">{{ site.lang_short[l] }}</a>
+        {% endfor %}
+      </div>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu>
+      <span class="menu-open">{{ m.icon("menu") }}<span class="sr">{{ t.ui.menu }}</span></span>
+      <span class="menu-close">{{ m.icon("close") }}<span class="sr">{{ t.ui.close }}</span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand-invert" href="{{ path('home') }}">
+        <img src="/assets/img/emblem.png" width="143" height="142" alt="" class="brand-mark">
+        <span class="brand-text"><span class="brand-name">Global Wish</span><span class="brand-sub">{{ t.company.name }}</span></span>
+      </a>
+      <p class="footer-tagline">{{ t.ui.footer_tagline }}</p>
+      {{ m.ornament("ornament ornament-footer") }}
+    </div>
+    <div>
+      <h2 class="footer-h">{{ t.ui.footer_company }}</h2>
+      <address class="footer-address">
+        <p>{{ m.icon("pin", "ico ico-sm") }}<span>{{ t.company.address }}</span></p>
+        <p>{{ m.icon("phone", "ico ico-sm") }}<span><span class="nowrap">{{ t.ui.tel }} <a href="tel:{{ site.tel }}">{{ site.tel_local if lang == "ja" else site.tel }}</a></span> · <span class="nowrap">{{ t.ui.fax }} {{ site.fax_local if lang == "ja" else site.fax }}</span></span></p>
+        <p>{{ m.icon("mail", "ico ico-sm") }}<a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p>{{ m.icon("clock", "ico ico-sm") }}<span>{{ t.company.hours }}</span></p>
+      </address>
+    </div>
+    <div>
+      <h2 class="footer-h">{{ t.ui.footer_explore }}</h2>
+      <ul class="footer-links">
+        {% for s in site.pages %}
+        <li><a href="{{ path(s) }}">{{ t.ui.nav[s] }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-h">{{ t.ui.footer_follow }}</h2>
+      <ul class="footer-links">
+        <li><a href="{{ site.instagram }}" rel="noopener" target="_blank">{{ m.icon("instagram", "ico ico-sm") }} {{ t.ui.instagram }}</a></li>
+        <li><a href="{{ site.amazon_store }}" rel="noopener" target="_blank">{{ m.icon("cart", "ico ico-sm") }} {{ t.ui.amazon }}</a></li>
+      </ul>
+      <div class="lang lang-footer" role="group" aria-label="{{ t.ui.language }}">
+        {% for l in langs %}
+        <a href="{{ alt[l]|replace(base_url, '') }}" hreflang="{{ l }}" lang="{{ l }}"{% if l == lang %} aria-current="true"{% endif %}>{{ site.lang_label[l] }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>© 2018–{{ year }} {{ t.company.name }} {{ t.ui.rights }}</p>
+    <a href="#main" class="to-top">{{ t.ui.back_top }} ↑</a>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

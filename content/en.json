@@ -1,0 +1,838 @@
+{
+  "meta": {
+    "site_name": "Global Wish Co., Ltd.",
+    "brand_short": "Global Wish",
+    "brand_sub": "Japan × Russia — culture, craft and trade",
+    "pages": {
+      "home": {
+        "title": "Global Wish Co., Ltd. | Connecting Japan and Russia through culture, craft and trade",
+        "description": "Global Wish is a Japanese company bringing Siberian honey, Ivan-chai, hand-painted glass ornaments and matryoshka to Japan, and connecting people through translation, events and classes."
+      },
+      "about": {
+        "title": "About us | Global Wish Co., Ltd.",
+        "description": "Our philosophy, a message from President Elena Kanno, company overview and our environment and quality policy."
+      },
+      "services": {
+        "title": "Services | Global Wish Co., Ltd.",
+        "description": "Translation and interpretation, event and exhibition planning, import and export, and matryoshka painting classes."
+      },
+      "products": {
+        "title": "Products | Global Wish Co., Ltd.",
+        "description": "Raw Altai honey, Ivan-chai herbal tea, Siberian pine nut foods, freeze-dried fruit chocolate, Vintage Shar glass ornaments and matryoshka crafts imported from Russia."
+      },
+      "events": {
+        "title": "Events & track record | Global Wish Co., Ltd.",
+        "description": "Pop-up shops, department store fairs, festivals, exhibitions and matryoshka painting workshops held by Global Wish since 2014."
+      },
+      "contact": {
+        "title": "Contact | Global Wish Co., Ltd.",
+        "description": "Contact Global Wish about translation, events, product orders, wholesale, classes or import and export."
+      },
+      "privacy": {
+        "title": "Privacy policy | Global Wish Co., Ltd.",
+        "description": "How Global Wish Co., Ltd. handles personal information."
+      }
+    }
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "products": "Products",
+      "events": "Events",
+      "contact": "Contact",
+      "privacy": "Privacy policy"
+    },
+    "cta_contact": "Contact us",
+    "cta_products": "Explore products",
+    "amazon": "Shop on Amazon",
+    "instagram": "Instagram",
+    "map": "Open map",
+    "back_top": "Back to top",
+    "footer_tagline": "Creating new value — preserving the environment and connecting people across borders, languages and cultures.",
+    "footer_company": "Company",
+    "footer_explore": "Explore",
+    "footer_follow": "Follow",
+    "rights": "All rights reserved.",
+    "tel": "Tel",
+    "fax": "Fax",
+    "email": "Email",
+    "hours": "Hours",
+    "address": "Address"
+  },
+  "company": {
+    "name": "Global Wish Co., Ltd.",
+    "address": "12-9-208 Yotsuya-Kamicho, Kawasaki-ku, Kawasaki-shi, Kanagawa 210-0828, Japan",
+    "hours": "Weekdays 9:00–17:00 (JST)",
+    "president": "Elena Kanno",
+    "president_title": "President & Representative Director"
+  },
+  "home": {
+    "eyebrow": "Japan × Russia · since 2018",
+    "heading": "Connecting people across languages, cultures and borders",
+    "lead": "Global Wish brings the flavours and craftsmanship of Russia and Siberia to Japan — and builds bridges between people through translation, events and education.",
+    "hero_alt": "A clear mountain lake in the Altai region of Siberia",
+    "pillars_eyebrow": "What we do",
+    "pillars_heading": "Four ways we bring two cultures closer",
+    "pillars": [
+      {
+        "icon": "speech",
+        "title": "Translation & interpretation",
+        "text": "Japanese, Russian and English — for business meetings, documents, exhibitions and cultural exchange."
+      },
+      {
+        "icon": "stage",
+        "title": "Events & exhibitions",
+        "text": "Planning, production and management of pop-up shops, fairs, exhibitions and lectures."
+      },
+      {
+        "icon": "crate",
+        "title": "Import & export",
+        "text": "Carefully selected foods, crafts and goods from Russia, for retail, wholesale and gifting."
+      },
+      {
+        "icon": "brush",
+        "title": "Classes & culture",
+        "text": "Matryoshka painting classes and workshops that let people make culture with their own hands."
+      }
+    ],
+    "products_eyebrow": "From the taiga to your table",
+    "products_heading": "Products we are proud to introduce",
+    "products_lead": "Every product is chosen for its origin, its maker and its story — from raw honey gathered in the Altai Mountains to glass ornaments painted entirely by hand.",
+    "featured": [
+      {
+        "img": "altai-peaks",
+        "anchor": "honey",
+        "title": "Raw Altai honey",
+        "text": "Unheated, additive-free honey from meadows, mountains and taiga."
+      },
+      {
+        "img": "ivan-tea",
+        "anchor": "ivan-chai",
+        "title": "Ivan-chai herbal tea",
+        "text": "A caffeine-free Russian classic, fermented from fireweed leaves."
+      },
+      {
+        "img": "pine-nut",
+        "anchor": "pine-nut",
+        "title": "Siberian pine nut foods",
+        "text": "Cold-pressed pine nut oil, pine nut cake and pine cone jam."
+      },
+      {
+        "img": "matryoshka-display",
+        "anchor": "crafts",
+        "title": "Matryoshka & crafts",
+        "text": "Hand-painted nesting dolls, glass ornaments and folk goods."
+      }
+    ],
+    "story_eyebrow": "Our story",
+    "story_quote": "My mother's family has been making honey for seventy years. I grew up knowing that taste and never forgot it — so I began importing it, to share it with everyone in Japan.",
+    "story_name": "Elena Kanno",
+    "story_role": "President, Global Wish Co., Ltd.",
+    "story_link": "Read our philosophy",
+    "record_eyebrow": "Track record",
+    "record_heading": "On stage at well-known venues across Japan",
+    "record_lead": "Since our first matryoshka exhibition in 2014, we have brought Russian culture to department stores, shopping destinations and festivals across Japan.",
+    "stats": [
+      {
+        "num": "2014",
+        "label": "first matryoshka class exhibition"
+      },
+      {
+        "num": "55+",
+        "label": "matryoshka painting classes held"
+      },
+      {
+        "num": "3",
+        "label": "languages: Japanese, Russian, English"
+      }
+    ],
+    "venues": [
+      "Yokohama Red Brick Warehouse",
+      "Odakyu Shinjuku",
+      "HIBIYA CHANTER",
+      "GINZA SIX",
+      "Ueno PARCO_ya",
+      "Kichijoji PARCO",
+      "IKSPIARI",
+      "Seibu Ikebukuro",
+      "Tamagawa Takashimaya",
+      "Yoyogi Park Russian Festival",
+      "INTEX Osaka",
+      "Akasaka Sacas",
+      "Shosen Grande"
+    ],
+    "record_link": "See all events",
+    "cta_heading": "Let's create something together",
+    "cta_text": "Translation, an event, a wholesale order or a class — tell us what you have in mind and we will get back to you promptly."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "heading": "A company founded on a wish",
+    "lead": "Global Wish was founded in 2018 to stand beside people who seek happiness culturally, artistically and economically — beyond differences of language, race and nationality.",
+    "philosophy_heading": "Corporate philosophy",
+    "philosophy": [
+      {
+        "title": "Understanding across borders",
+        "text": "We deepen understanding of different values across every language, race and nation, create new values together, and support people who seek happiness culturally, artistically and economically."
+      },
+      {
+        "title": "Innovation and conviction",
+        "text": "In fields that constantly demand fresh, flexible thinking, we never stand still — we remain a company that holds on to innovation and conviction."
+      },
+      {
+        "title": "The environment comes first",
+        "text": "We recognise the preservation of the global environment as our most important issue."
+      },
+      {
+        "title": "Responsibility in everything we do",
+        "text": "In every aspect of our business, we give top priority to preserving a healthy environment."
+      }
+    ],
+    "message_heading": "A message from our president",
+    "message": [
+      "In the twenty-first century, disasters and conflicts continue around the world, and economic, political, environmental and racial problems are piling up.",
+      "Everyone hopes that human wisdom will resolve at least some of these tangled problems — and we cannot help but hope so too.",
+      "We founded Global Wish with the hope of helping such wishes come true around the world, and of standing beside people who keep walking steadily towards the future.",
+      "Through networks that connect Japan with the world, and communication that connects people with people, we want to be of service in any way we can.",
+      "Through translation and interpretation, international cultural exchange, art and music, lectures and education, we will stand beside you — understanding our differences, and creating and sharing new values together."
+    ],
+    "message_date": "29 September 2018",
+    "president_alt": "Portrait of Elena Kanno, President of Global Wish",
+    "overview_heading": "Company overview",
+    "overview": [
+      {
+        "k": "Company name",
+        "v": "Global Wish Co., Ltd. (グローバルウィッシュ株式会社)"
+      },
+      {
+        "k": "Address",
+        "v": "12-9-208 Yotsuya-Kamicho, Kawasaki-ku, Kawasaki-shi, Kanagawa 210-0828, Japan"
+      },
+      {
+        "k": "Telephone",
+        "v": "+81-44-201-4250"
+      },
+      {
+        "k": "Fax",
+        "v": "+81-44-589-4041"
+      },
+      {
+        "k": "Founded",
+        "v": "10 September 2018"
+      },
+      {
+        "k": "Capital",
+        "v": "¥10 million (authorised capital: ¥40 million)"
+      },
+      {
+        "k": "Representative",
+        "v": "Elena Kanno, President & Representative Director"
+      }
+    ],
+    "business_heading": "Lines of business",
+    "business": [
+      "Translation and interpretation",
+      "Planning, production and management of events, exhibitions and lectures",
+      "Worker dispatch",
+      "Import, export and sale of folk crafts, accessories, clothing, cosmetics and general goods",
+      "Sale and rental of healing art",
+      "Operation of art classes",
+      "Operation of foreign-language classes",
+      "Import and export of care and assistive equipment",
+      "Import and export of foods and confectionery",
+      "Import and export of construction machinery, trucks and passenger vehicles",
+      "All business incidental to the above"
+    ],
+    "policy_heading": "Environment and quality policy",
+    "policy_intro": "We aim to remain a company that never stands still, holding on to innovation and conviction in fields that demand fresh, flexible thinking. Recognising the preservation of the global environment as our most important issue, we give it top priority in every aspect of our business.",
+    "policy_basic_heading": "Basic policy",
+    "policy_basic": [
+      "To raise customer trust and satisfaction and to contribute to the global environment, we listen to all our stakeholders and improve continuously.",
+      "We comply with relevant laws and regulations and other requirements we have agreed to, and provide products and services that meet our customers' needs."
+    ],
+    "policy_goals_intro": "As environmental and quality management goals, we work to achieve:",
+    "policy_goals": [
+      "Quality and service that meet — and exceed — our customers' expectations",
+      "Energy and resource saving",
+      "The elimination of harmful substances from our products"
+    ],
+    "policy_close": "This policy is shared with every employee and everyone who works with us, and we pursue it together. It is open to the public."
+  },
+  "services": {
+    "eyebrow": "Services",
+    "heading": "Bridges between Japan and Russia",
+    "lead": "Language, events, trade and education — four services rooted in one belief: understanding grows when people meet.",
+    "items": [
+      {
+        "id": "translation",
+        "img": "translation",
+        "title": "Translation & interpretation",
+        "text": "Japanese–Russian–English translation and interpretation for business negotiations, contracts and documents, trade shows, cultural events and lectures.",
+        "points": [
+          "Business meetings and negotiations",
+          "Documents, catalogues and websites",
+          "Exhibitions, lectures and cultural exchange"
+        ]
+      },
+      {
+        "id": "events",
+        "img": "popup-parco-1",
+        "title": "Events & exhibitions",
+        "text": "From department store fairs to festival stages, we plan, produce and run events that introduce Russian culture and products to Japanese audiences.",
+        "points": [
+          "Pop-up shops and department store fairs",
+          "Exhibitions and trade shows",
+          "Workshops and stage programmes"
+        ]
+      },
+      {
+        "id": "trade",
+        "img": "products",
+        "title": "Import, export & wholesale",
+        "text": "We import foods, crafts and goods directly from producers in Russia, and handle import and export of a wide range of goods, from assistive equipment to vehicles and machinery.",
+        "points": [
+          "Foods, confectionery and herbal teas",
+          "Folk crafts, accessories and gifts",
+          "Wholesale and B2B enquiries welcome"
+        ]
+      },
+      {
+        "id": "classes",
+        "img": "class-painting",
+        "title": "Matryoshka painting classes",
+        "text": "Paint your own original matryoshka. Our monthly classes and one-day workshops welcome complete beginners, children and experienced painters alike.",
+        "points": [
+          "Monthly classes in Tokyo",
+          "One-day workshops for events and companies",
+          "Paint sets for painting at home"
+        ]
+      }
+    ],
+    "process_heading": "How we work",
+    "process": [
+      {
+        "title": "Tell us",
+        "text": "Send us your request by email or the contact form — in Japanese, English or Russian."
+      },
+      {
+        "title": "Proposal",
+        "text": "We reply with a proposal, schedule and estimate tailored to your needs."
+      },
+      {
+        "title": "Delivery",
+        "text": "Our bilingual team carries out the work and stays in touch from start to finish."
+      }
+    ]
+  },
+  "products": {
+    "eyebrow": "Products",
+    "heading": "The taste and craft of Russia",
+    "lead": "Products chosen for their origin, their makers and their stories. Available by order from us, and many through our Amazon store.",
+    "jump": "Jump to",
+    "price_note": "Prices and availability change with each import. Please contact us for current prices, or visit our Amazon store.",
+    "categories": [
+      {
+        "id": "honey",
+        "img": "honey",
+        "title": "Raw honey from the Siberian Altai",
+        "text": [
+          "The Altai region lies in southern Siberia, a land of vast mountains and clear rivers often called the Earth's \"green pharmacy\" and its \"lungs\". It is one of the cleanest regions in Russia and renowned worldwide for its honey.",
+          "All our Altai honeys are raw: unheated and free of additives."
+        ],
+        "items": [
+          {
+            "name": "Meadowgrass honey",
+            "spec": "200 g",
+            "text": "A true multi-flower honey from chicory, willow, fireweed, dandelion, meadowsweet, clover, sunflower and more. Its taste changes subtly with each year's flowers and weather — lovely in hot milk."
+          },
+          {
+            "name": "Mountain honey",
+            "spec": "200 g",
+            "text": "Gathered from flowers blooming at 2,200 m, where bees store rich honey in the short summer. Mild yet full-bodied, with notes of maral root, acacia and hawthorn."
+          },
+          {
+            "name": "Taiga honey",
+            "spec": "200 g",
+            "text": "From the coniferous forests of Siberia. Deep in colour, aromatic, with angelica, goldenrod, fireweed and wild strawberry. Wonderful with fresh cheese."
+          },
+          {
+            "name": "Clover honey",
+            "spec": "200 g",
+            "text": "From yellow sweet clover. Clean, refreshing sweetness — perfect on toast and in cooking or fruit liqueurs."
+          },
+          {
+            "name": "Esparcet (sainfoin) honey",
+            "spec": "200 g / 500 g",
+            "text": "Known as \"white honey\". Creamy and naturally crystallised, with an elegant flavour that pairs with yogurt, bread, cheese and wine."
+          },
+          {
+            "name": "Sbiten",
+            "spec": "110 ml",
+            "text": "A traditional Russian honey-and-spice syrup with Siberian fir extract, with ginger or with sage. Stir a spoonful into hot water, tea or mulled wine."
+          }
+        ],
+        "quote": "My mother's family has been making honey for seventy years. My grandfather cared for the bees all year round and never left his small Siberian village.",
+        "quote_by": "Elena Kanno, President"
+      },
+      {
+        "id": "ivan-chai",
+        "img": "ivan-tea",
+        "title": "Ivan-chai & Russian herbal teas",
+        "text": [
+          "Ivan-chai is made from the fermented leaves and flowers of fireweed. Exported to Europe in the days of the Russian Empire, it is a tea with a long story — and it is naturally caffeine-free, so it can be enjoyed at any time of day, by the whole family."
+        ],
+        "items": [
+          {
+            "name": "Ivan-chai with sea buckthorn",
+            "spec": "50 g",
+            "text": "A favourite of northern Russia, with bright, tangy sea buckthorn."
+          },
+          {
+            "name": "Ivan-chai with oregano, mint or thyme",
+            "spec": "50 g / 150 g",
+            "text": "Classic herbal blends — warming oregano, calming mint, fragrant thyme."
+          },
+          {
+            "name": "Ivan-chai with rose hip or blackcurrant leaf",
+            "spec": "50 g / 150 g",
+            "text": "Hot in winter, iced in summer."
+          },
+          {
+            "name": "Ivan-chai with ginger and lemon",
+            "spec": "50 g / 150 g",
+            "text": "A Siberian winter staple."
+          },
+          {
+            "name": "Chaga tea with thyme or mint",
+            "spec": "100 g",
+            "text": "Made from chaga, a birch mushroom that grows slowly over ten to fifteen years."
+          }
+        ],
+        "quote": "I grew up surrounded by the beautiful nature of northern Russia, picking berries and herbs to brew. In distant Siberia I found the taste of my childhood — and I want to share it with you.",
+        "quote_by": "Elena Kanno, President"
+      },
+      {
+        "id": "pine-nut",
+        "img": "pine-nut",
+        "title": "Siberian pine nut foods",
+        "text": [
+          "Seeds of the Siberian pine, which grows wild across Siberia, naturally contain unsaturated fatty acids such as pinolenic, oleic and linoleic acid, along with dietary fibre, B vitamins and minerals."
+        ],
+        "items": [
+          {
+            "name": "Pine nut oil",
+            "spec": "95 ml",
+            "text": "Cold-pressed and unfiltered. Best enjoyed unheated — drizzled on dishes or in dressings."
+          },
+          {
+            "name": "Pine nut cake",
+            "spec": "100 g",
+            "text": "What remains after pressing the oil, rich in protein. Eat like nuts, with honey and yogurt, or in cooking."
+          },
+          {
+            "name": "Pine cone jam",
+            "spec": "250 g",
+            "text": "A Siberian speciality made from young pine cones, sugar and natural lemon juice."
+          }
+        ]
+      },
+      {
+        "id": "chocolate",
+        "img": "chocolate",
+        "title": "Chocolate with freeze-dried Siberian fruit",
+        "text": [
+          "Delicious, pretty chocolate topped generously with freeze-dried Siberian fruit — free of additives, flavourings and colourings. A popular gift."
+        ],
+        "items": [
+          {
+            "name": "Milk chocolate with pine nuts and lingonberry",
+            "spec": "30 g / 100 g",
+            "text": "With freeze-dried lingonberry and Siberian pine nuts. Made without preservatives — best enjoyed soon after purchase."
+          }
+        ]
+      },
+      {
+        "id": "buckwheat",
+        "img": "altai-meadow",
+        "title": "Uvelka Russian buckwheat",
+        "text": [
+          "In Russia and Eastern Europe, buckwheat is eaten as whole groats rather than flour or noodles — a wholesome everyday staple, loved by dancers and athletes alike."
+        ],
+        "items": [
+          {
+            "name": "Uvelka buckwheat groats",
+            "spec": "400 g × 3 / 800 g × 3",
+            "text": "Whole buckwheat from Russia."
+          }
+        ]
+      },
+      {
+        "id": "ornaments",
+        "img": "popup-parco-2",
+        "title": "Vintage Shar glass ornaments",
+        "text": [
+          "Founded in Veliky Novgorod in 2011, the Vintage Shar workshop supplies the Russian and European markets. Every ornament — from blowing the glass to painting each design — is made entirely by hand, without stickers or prints."
+        ],
+        "items": [
+          {
+            "name": "Hand-painted glass ornaments",
+            "spec": "Ø 80–100 mm",
+            "text": "Winter scenes, St Petersburg, the Nutcracker, angels, birds, a squirrel with mushrooms and many more."
+          }
+        ]
+      },
+      {
+        "id": "crafts",
+        "img": "matryoshka-display",
+        "title": "Matryoshka, folk crafts & goods",
+        "text": [
+          "Hand-painted matryoshka, roly-poly dolls and accessories with the warmth that only handwork has. As each piece is handmade, sizes may vary slightly."
+        ],
+        "items": [
+          {
+            "name": "Hand-painted matryoshka",
+            "spec": "H 170 mm",
+            "text": "Original works including \"A Story of One Day\", \"Angel and the Magic Bird\" and \"Zaznobushka\"."
+          },
+          {
+            "name": "Roly-poly dolls (with bell)",
+            "spec": "Handmade",
+            "text": "A traditional toy loved in Russia from royal courts to family homes."
+          },
+          {
+            "name": "OXIOMA handmade brooches",
+            "spec": "6 × 5.5 cm",
+            "text": "Bronze with gold finish — the Golubushka series."
+          },
+          {
+            "name": "Matryoshka tote bags & key rings",
+            "spec": "S / L",
+            "text": "Including our Mount Fuji and lucky-cat matryoshka key rings — a nod to the matryoshka's roots in Japanese nesting dolls."
+          }
+        ]
+      },
+      {
+        "id": "paint-sets",
+        "img": "class-stage",
+        "title": "Matryoshka paint sets",
+        "text": [
+          "Make your own matryoshka at home. Outlines are pre-printed, so even first-timers get beautiful results — the same sets we use in our classes."
+        ],
+        "items": [
+          {
+            "name": "Orthodox paint set",
+            "spec": "5-piece, Ø 55 × H 115 mm",
+            "text": "Five-piece matryoshka, six watercolours and a brush."
+          },
+          {
+            "name": "Santa paint set",
+            "spec": "3-piece",
+            "text": "Three-piece matryoshka with pre-printed design (paints not included)."
+          },
+          {
+            "name": "Blank wooden matryoshka & roly-poly",
+            "spec": "5-piece, Ø 55 × H 105 mm",
+            "text": "Plain wood for free painting (paints not included)."
+          }
+        ]
+      }
+    ],
+    "order_heading": "How to order",
+    "order_steps": [
+      "Send us the product names and quantities via the contact form or email.",
+      "We reply by email with the total (price, tax and shipping) and payment options.",
+      "Pay by bank transfer, or choose cash on delivery.",
+      "We ship once payment is confirmed."
+    ],
+    "order_amazon": "Many of our products are also available on Amazon."
+  },
+  "events": {
+    "eyebrow": "Events & track record",
+    "heading": "Where Russia meets Japan",
+    "lead": "Pop-up shops, department store fairs, festivals and exhibitions — and the matryoshka workshops that have been at the heart of our work from the start.",
+    "classes_heading": "Monthly matryoshka painting classes",
+    "classes_text": "Our matryoshka painting classes are held every month in Tokyo to promote exchange, mutual understanding and friendship between Japan and Russia. Beginners are always welcome — get in touch to join.",
+    "classes_cta": "Ask about classes",
+    "years": [
+      {
+        "year": "2024",
+        "items": [
+          {
+            "title": "Yokohama Red Brick Christmas Market",
+            "date": "22 November – 25 December 2024",
+            "place": "Yokohama Red Brick Warehouse, Event Square",
+            "text": "Our stall specialising in hand-blown, hand-painted Christmas ornaments.",
+            "img": "christmas-market"
+          }
+        ]
+      },
+      {
+        "year": "2023",
+        "items": [
+          {
+            "title": "Pop-up shop at Odakyu Shinjuku",
+            "date": "1–14 February 2023",
+            "place": "Odakyu Department Store Shinjuku, 2F",
+            "text": "A two-week pop-up shop of Russian goods.",
+            "img": "popup-showcase"
+          },
+          {
+            "title": "Matryoshka painting class",
+            "date": "25 February 2023",
+            "place": "LIBRA, 3 minutes from Tamachi Station",
+            "text": "Our popular monthly class."
+          },
+          {
+            "title": "Pop-up shop at HIBIYA CHANTER",
+            "date": "25 January – 19 February 2023",
+            "place": "HIBIYA CHANTER 1F",
+            "text": "Free entry."
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "items": [
+          {
+            "title": "HIBIYA Christmas Market 2022",
+            "date": "9–25 December 2022",
+            "place": "Hibiya Park, Tokyo",
+            "text": "We took part in the Christmas market in Hibiya Park."
+          },
+          {
+            "title": "GINZA SIX pop-up",
+            "date": "1–31 July 2022",
+            "place": "GINZA SIX B2, Japan Stage",
+            "text": "More than fifty sweets from Kyoto, Nara, Kobe, Osaka, Russia, Tunisia and America, alongside Russian pine nut oil and other delicacies."
+          }
+        ]
+      },
+      {
+        "year": "2021",
+        "items": [
+          {
+            "title": "Pretty Russia at Ueno PARCO_ya",
+            "date": "16 June – 18 July 2021",
+            "place": "Ueno PARCO_ya 4F",
+            "text": "Our Russian goods shop with matryoshka, jewellery, kitchenware, Siberian honey, herbal teas and fine chocolate.",
+            "img": "popup-parco-1"
+          },
+          {
+            "title": "Pretty Russia at Kichijoji PARCO",
+            "date": "12 April – 31 May",
+            "place": "Kichijoji PARCO 3F",
+            "text": "From Russia with love — matryoshka and Russian goods still little known in Japan."
+          }
+        ]
+      },
+      {
+        "year": "2020",
+        "items": [
+          {
+            "title": "Russian goods at IKSPIARI",
+            "date": "27 November 2020 – 31 January 2021",
+            "place": "IKSPIARI 3F, Gracious Square, Maihama",
+            "text": "Hand-painted Christmas ornaments from Vintage Shar, matryoshka, Altai honey, Ivan-chai and chocolate — with matryoshka painting workshops."
+          },
+          {
+            "title": "Christmas sale at Seibu Ikebukuro",
+            "date": "2–8 December 2020",
+            "place": "Seibu Ikebukuro Main Store",
+            "text": "A week of Russian Christmas gifts and decorations."
+          },
+          {
+            "title": "Matryoshka painting class",
+            "date": "29 November 2020",
+            "place": "Minato City Gender Equality Center \"LIBRA\", Tamachi",
+            "text": "Paint your own original matryoshka, roly-poly doll, cutting board, brooch or magnet."
+          },
+          {
+            "title": "Russian Christmas ornaments at Tamagawa Takashimaya",
+            "date": "28 October – 3 November 2020",
+            "place": "Tamagawa Takashimaya 5F",
+            "text": "An early taste of Christmas with hand-painted Russian ornaments."
+          },
+          {
+            "title": "Lifestyle Week Kansai — International Interior Goods EXPO",
+            "date": "9–11 September 2020",
+            "place": "INTEX Osaka",
+            "text": "We exhibited hand-blown, hand-painted glass Christmas ornaments — a first in Japan.",
+            "img": "world-market"
+          }
+        ]
+      },
+      {
+        "year": "2019",
+        "items": [
+          {
+            "title": "Annual exhibition of matryoshka class works",
+            "date": "24–25 June 2019",
+            "place": "Shosen Book Tower, Akihabara",
+            "text": "A year's work by our students and master class, with original works by Elena Kanno. Part of the proceeds went to charities supporting children."
+          },
+          {
+            "title": "Russian Folk Craft Fair",
+            "date": "10–14 January 2019",
+            "place": "Naha Main Place, Okinawa",
+            "text": "Matryoshka painting, Russian goods and chocolate."
+          }
+        ]
+      },
+      {
+        "year": "2018",
+        "items": [
+          {
+            "title": "1st Russian Festival",
+            "date": "24–25 November 2018",
+            "place": "Yoyogi Park, Tokyo",
+            "text": "Our matryoshka painting corner welcomed many visitors to the first Russian Festival in Yoyogi Park.",
+            "img": "team-matryoshka"
+          },
+          {
+            "title": "Matryoshka exhibition",
+            "date": "5–7 November 2018",
+            "place": "Shosen Grande 7F, Jinbocho",
+            "text": "Exhibition, demonstrations and workshops, with special guest portrait artist Tomokazu Tabata."
+          },
+          {
+            "title": "55th matryoshka painting class",
+            "date": "28 October 2018",
+            "place": "Minato City Gender Equality Center \"LIBRA\"",
+            "text": "Part of our ongoing work to promote friendship between Japan and Russia."
+          },
+          {
+            "title": "Stage workshop at Akasaka Sacas",
+            "date": "18 October 2018",
+            "place": "Sacas Hiroba Stage, Akasaka",
+            "text": "A free open-air matryoshka painting workshop."
+          }
+        ]
+      },
+      {
+        "year": "2014–2016",
+        "items": [
+          {
+            "title": "3rd matryoshka class exhibition",
+            "date": "7–8 December 2016",
+            "place": "Shosen Grande 7F",
+            "text": "Proceeds were donated through the certified NPO Katariba to support children affected by earthquakes."
+          },
+          {
+            "title": "Jinbocho Book Festival workshop",
+            "date": "29 October 2016",
+            "place": "Bumpodo Art School",
+            "text": "An open matryoshka painting corner for everyone."
+          },
+          {
+            "title": "1st matryoshka class exhibition",
+            "date": "9–11 June 2014",
+            "place": "Shosen Grande 7F",
+            "text": "Where it all began: student works, demonstrations and matryoshka from across Russia."
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "We would love to hear from you",
+    "lead": "Write to us in Japanese, English or Russian. We will get back to you as soon as possible.",
+    "direct_heading": "Contact details",
+    "form_heading": "Send an enquiry",
+    "form_note": "When you press the button, your email app opens with your message ready to send. Nothing is stored on this website.",
+    "topic": "Topic",
+    "topics": [
+      "Translation / interpretation",
+      "Events",
+      "Product order or rental",
+      "Wholesale / import & export",
+      "Classes",
+      "Other"
+    ],
+    "name": "Name",
+    "company": "Company / organisation",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "required": "Required",
+    "submit": "Write the email",
+    "subject_prefix": "Enquiry",
+    "error": "Please fill in the required fields.",
+    "order_hint": "For orders, please include the product names and quantities."
+  },
+  "privacy": {
+    "eyebrow": "Privacy policy",
+    "heading": "Privacy policy",
+    "intro": [
+      "Global Wish Co., Ltd. (\"we\") protects the personal information entrusted to us by our customers and strives to provide even greater trust and peace of mind in all our business activities.",
+      "We comply with laws and regulations concerning personal information and handle it appropriately."
+    ],
+    "sections": [
+      {
+        "title": "1. Acquisition of personal information",
+        "body": [
+          "We acquire personal information by lawful and fair means, never by deception or other improper means."
+        ]
+      },
+      {
+        "title": "2. Use of personal information",
+        "body": [
+          "We use personal information only to the extent necessary for the purposes below. Should we wish to use it for any other purpose, we will first obtain your consent."
+        ],
+        "list": [
+          "Replying to requests for estimates and enquiries, and sending materials",
+          "Shipping products you have ordered",
+          "Providing information on exhibitions, products and services"
+        ]
+      },
+      {
+        "title": "3. Security",
+        "body": [
+          "We take necessary and appropriate measures to prevent leakage, loss or damage of personal information and otherwise keep it secure."
+        ]
+      },
+      {
+        "title": "4. Outsourcing",
+        "body": [
+          "When we entrust all or part of the handling of personal information to a third party, we carefully vet that party and supervise it appropriately to ensure the information is kept secure."
+        ]
+      },
+      {
+        "title": "5. Provision to third parties",
+        "body": [
+          "We do not disclose or provide your personal information to third parties except in the following cases:"
+        ],
+        "list": [
+          "When required by law",
+          "When necessary to protect a person's life, body or property and it is difficult to obtain consent",
+          "When especially necessary to improve public health or promote the healthy development of children and it is difficult to obtain consent",
+          "When necessary to cooperate with a national or local government body, or its contractor, in carrying out duties prescribed by law, and obtaining consent could hinder those duties"
+        ]
+      },
+      {
+        "title": "6. Disclosure and correction",
+        "body": [
+          "If you request disclosure of your personal information, we will disclose it promptly. If the information is incorrect and you request correction, addition or deletion, we will investigate and respond promptly. We cannot respond if we are unable to confirm your identity."
+        ]
+      },
+      {
+        "title": "7. This website",
+        "body": [
+          "This website does not use cookies, analytics or advertising trackers. The contact form does not send or store data on our server: it opens your own email app. Web fonts are loaded from Google Fonts, which receives your IP address as part of normal web requests."
+        ]
+      }
+    ],
+    "contact_heading": "Contact",
+    "contact_text": "For requests or questions about our handling of personal information, please contact:"
+  },
+  "notfound": {
+    "title": "Page not found",
+    "text": "The page you are looking for may have moved. Please choose a language to continue."
+  }
+}

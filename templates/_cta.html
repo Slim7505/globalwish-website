@@ -1,0 +1,12 @@
+{% import "_macros.html" as m with context %}
+<section class="cta">
+  <div class="wrap cta-inner reveal">
+    {{ m.ornament("ornament ornament-cta") }}
+    <h2 class="h2">{{ t.home.cta_heading }}</h2>
+    <p>{{ t.home.cta_text }}</p>
+    <div class="actions actions-center">
+      <a class="btn btn-primary" href="{{ path('contact') }}">{{ t.ui.cta_contact }} {{ m.icon("arrow", "ico ico-sm") }}</a>
+      <a class="btn btn-ghost" href="mailto:{{ site.email }}">{{ m.icon("mail", "ico ico-sm") }} {{ site.email }}</a>
+    </div>
+  </div>
+</section>

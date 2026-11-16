@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 | Global Wish Co., Ltd.</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="chooser">
+<main class="chooser-main">
+  <img src="/assets/img/emblem.png" width="143" height="142" alt="" class="chooser-mark">
+  <p class="display display-md">404</p>
+  {% for l in langs %}
+  <p lang="{{ l }}"><strong>{{ strings[l].notfound.title }}</strong> — {{ strings[l].notfound.text }}</p>
+  {% endfor %}
+  <ul class="chooser-list">
+    {% for l in langs %}<li><a href="/{{ l }}/" hreflang="{{ l }}" lang="{{ l }}">{{ site.lang_label[l] }}</a></li>{% endfor %}
+  </ul>
+</main>
+</body>
+</html>

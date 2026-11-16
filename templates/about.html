@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block content %}
+{% set P = t.about %}{% set head_img = "team-matryoshka" %}
+{% include "_pagehead.html" %}
+
+<section class="section">
+  <div class="wrap">
+    <header class="section-head reveal"><h2 class="h2">{{ P.philosophy_heading }}</h2></header>
+    <ol class="principles">
+      {% for p in P.philosophy %}
+      <li class="principle reveal"><span class="principle-num">{{ "%02d"|format(loop.index) }}</span><h3 class="h3">{{ p.title }}</h3><p>{{ p.text }}</p></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section section-tint" id="message">
+  <div class="wrap message-grid">
+    <figure class="message-portrait reveal">
+      <div class="portrait-ring">{{ m.img("president", P.president_alt, "cover") }}</div>
+      <figcaption><strong>{{ t.company.president }}</strong><span>{{ t.company.president_title }}</span></figcaption>
+    </figure>
+    <div class="prose reveal">
+      <h2 class="h2">{{ P.message_heading }}</h2>
+      {% for para in P.message %}<p>{{ para }}</p>{% endfor %}
+      <p class="signature">{{ P.message_date }}<br>{{ t.company.president_title }} {{ t.company.president }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="overview">
+  <div class="wrap overview-grid">
+    <div class="reveal">
+      <h2 class="h2">{{ P.overview_heading }}</h2>
+      <dl class="facts">
+        {% for row in P.overview %}
+        <div><dt>{{ row.k }}</dt><dd>{{ row.v }}</dd></div>
+        {% endfor %}
+      </dl>
+      <p><a class="link-arrow" href="{{ site.map }}" rel="noopener" target="_blank">{{ m.icon("pin", "ico ico-sm") }} {{ t.ui.map }}</a></p>
+    </div>
+    <div class="reveal">
+      <h2 class="h2">{{ P.business_heading }}</h2>
+      <ul class="ticks">
+        {% for b in P.business %}<li>{{ b }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-image" id="policy">
+  <div class="section-image-bg">{{ m.img("environment", "", "cover") }}</div>
+  <div class="wrap">
+    <div class="policy-card reveal">
+      <h2 class="h2">{{ P.policy_heading }}</h2>
+      <p>{{ P.policy_intro }}</p>
+      <h3 class="h3">{{ P.policy_basic_heading }}</h3>
+      {% for b in P.policy_basic %}<p>{{ b }}</p>{% endfor %}
+      <p>{{ P.policy_goals_intro }}</p>
+      <ul class="ticks">{% for g in P.policy_goals %}<li>{{ g }}</li>{% endfor %}</ul>
+      <p class="muted">{{ P.policy_close }}</p>
+    </div>
+  </div>
+</section>
+{% include "_cta.html" %}
+{% endblock %}

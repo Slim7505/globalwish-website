@@ -3,7 +3,7 @@
 
 - every internal href/src resolves to a file in dist/
 - every page has <title>, meta description, canonical, hreflang for every language, one <h1>
-- every <img> has a non-empty alt
+- every <img> has an alt attribute (empty = decorative)
 - html lang attribute matches the folder
 """
 import json, pathlib, re, sys
@@ -72,8 +72,8 @@ for page in pages:
         if not resolve(page, href):
             errors.append(f"{rel}: broken link {href}")
     for alt in p.imgs:
-        if not alt:
-            errors.append(f"{rel}: <img> without alt")
+        if alt is None:  # alt="" is valid for decorative images
+            errors.append(f"{rel}: <img> without alt attribute")
     if top in langs:
         if p.lang != top:
             errors.append(f"{rel}: html lang={p.lang} expected {top}")

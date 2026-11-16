@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block content %}
+{% set P = t.events %}{% set head_img = "popup-parco-2" %}
+{% include "_pagehead.html" %}
+<section class="section">
+  <div class="wrap classes-band reveal">
+    <div class="arch classes-media">{{ m.img("class-stage", "", "cover") }}</div>
+    <div>
+      <h2 class="h2">{{ P.classes_heading }}</h2>
+      <p>{{ P.classes_text }}</p>
+      <a class="btn btn-primary" href="{{ path('contact') }}?topic=4">{{ P.classes_cta }} {{ m.icon("arrow", "ico ico-sm") }}</a>
+    </div>
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="wrap timeline">
+    {% for y in P.years %}
+    <div class="tl-year">
+      <h2 class="tl-label"><span>{{ y.year }}</span></h2>
+      <ol class="tl-items">
+        {% for e in y["items"] %}
+        <li class="tl-item reveal{% if e.img is defined %} has-img{% endif %}">
+          {% if e.img is defined %}<div class="tl-media">{{ m.img(e.img, e.title, "cover") }}</div>{% endif %}
+          <div class="tl-body">
+            <p class="tl-date">{{ e.date }}</p>
+            <h3 class="h3">{{ e.title }}</h3>
+            <p class="tl-place">{{ m.icon("pin", "ico ico-sm") }} {{ e.place }}</p>
+            <p>{{ e.text }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% include "_cta.html" %}
+{% endblock %}
