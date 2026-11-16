@@ -8,19 +8,19 @@
 <link rel="canonical" href="{{ alt.ja }}">
 {% for l in langs %}<link rel="alternate" hreflang="{{ l }}" href="{{ alt[l] }}">
 {% endfor %}<link rel="alternate" hreflang="x-default" href="{{ alt.ja }}">
-<link rel="icon" href="/assets/img/favicon.png" type="image/png">
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="icon" href="{{ root }}assets/img/favicon.png" type="image/png">
+<link rel="stylesheet" href="{{ root }}assets/css/site.css">
 <script>
 (function(){var s={{ langs|tojson }},p=(navigator.languages||[navigator.language||"ja"]).map(function(x){return (x||"").slice(0,2).toLowerCase()}),c="ja";
-for(var i=0;i<p.length;i++){if(s.indexOf(p[i])>-1){c=p[i];break}}location.replace("/"+c+"/");})();
+for(var i=0;i<p.length;i++){if(s.indexOf(p[i])>-1){c=p[i];break}}location.replace({{ root|tojson }}+c+"/");})();
 </script>
 </head>
 <body class="chooser">
 <main class="chooser-main">
-  <img src="/assets/img/emblem.png" width="143" height="142" alt="" class="chooser-mark">
+  <img src="{{ root }}assets/img/emblem.png" width="143" height="142" alt="" class="chooser-mark">
   <h1 class="display display-md">Global Wish</h1>
   <ul class="chooser-list">
-    {% for l in langs %}<li><a href="/{{ l }}/" hreflang="{{ l }}" lang="{{ l }}">{{ site.lang_label[l] }}</a></li>{% endfor %}
+    {% for l in langs %}<li><a href="{{ root }}{{ l }}/" hreflang="{{ l }}" lang="{{ l }}">{{ site.lang_label[l] }}</a></li>{% endfor %}
   </ul>
 </main>
 </body>

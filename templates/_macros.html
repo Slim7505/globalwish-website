@@ -51,5 +51,5 @@
 
 {% macro img(name, alt, cls="", loading="lazy") -%}
 {%- set d = site.images[name] -%}
-<img class="{{ cls }}" src="/assets/img/{{ name }}.webp" width="{{ d[0] }}" height="{{ d[1] }}" alt="{{ alt }}" loading="{{ loading }}" decoding="async"{% if loading == "eager" %} fetchpriority="high"{% endif %}>
+<img class="{{ cls }}" src="{{ root }}assets/img/{{ name }}.webp" width="{{ d[0] }}" height="{{ d[1] }}" alt="{{ alt }}" loading="{{ loading }}" decoding="async"{% if loading == "eager" %} fetchpriority="high"{% endif %}>
 {%- endmacro %}

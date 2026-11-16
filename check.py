@@ -6,11 +6,12 @@
 - every <img> has an alt attribute (empty = decorative)
 - html lang attribute matches the folder
 """
-import json, pathlib, re, sys
+import json, os, pathlib, re, sys
 from html.parser import HTMLParser
 
 ROOT = pathlib.Path(__file__).resolve().parent
 DIST = ROOT / "dist"
+PREFIX = os.environ.get("SITE_PREFIX", "").rstrip("/")
 site = json.loads((ROOT / "content/site.json").read_text(encoding="utf-8"))
 langs = site["languages"]
 
@@ -53,6 +54,10 @@ def resolve(page, href):
     if not href or href.startswith(("http://", "https://", "mailto:", "tel:", "data:")):
         return True
     if href.startswith("/"):
+        if PREFIX:
+            if not (href == PREFIX or href.startswith(PREFIX + "/")):
+                return False
+            href = href[len(PREFIX):] or "/"
         target = DIST / href.lstrip("/")
     else:
         target = (page.parent / href).resolve()
